@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { User } from 'src/app/classes/user';
 import { UserService } from 'src/app/services/user.service';
 
@@ -9,7 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class SearchFormComponent implements OnInit {
 
-    public user:User[]=[];
+  users:User[]=[];
 
   constructor(private userService: UserService) { }
 
@@ -18,10 +19,10 @@ export class SearchFormComponent implements OnInit {
   search(searchedUser:any) {
     if(searchedUser !== '') {
       this.userService.getUser(searchedUser)
-      .subscribe((response:any) => {
-        this.user = response.data;
-        console.log("data", response);
-      })
+      .subscribe((response: any) => {
+       return this.users = response.data;
+        // console.log("data" , response);
+      });
     }
   }
 
