@@ -11,6 +11,7 @@ import { UserComponent } from './components/user/user.component';
 import { DisplayGithubUserComponent } from './components/display-github-user/display-github-user.component';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
 import { DatePipePipe } from './pipes/date-pipe.pipe';
+import { UnderlineDirective } from './directives/underline.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DatePipePipe } from './pipes/date-pipe.pipe';
     UserComponent,
     DisplayGithubUserComponent,
     RepositoriesComponent,
-    DatePipePipe
+    DatePipePipe,
+    UnderlineDirective
   ],
   imports: [
     BrowserModule,
