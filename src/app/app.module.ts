@@ -10,6 +10,7 @@ import { SearchFormComponent } from './components/search-form/search-form.compon
 import { UserComponent } from './components/user/user.component';
 import { DisplayGithubUserComponent } from './components/display-github-user/display-github-user.component';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
+import { DatePipePipe } from './pipes/date-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RepositoriesComponent } from './components/repositories/repositories.co
     SearchFormComponent,
     UserComponent,
     DisplayGithubUserComponent,
-    RepositoriesComponent
+    RepositoriesComponent,
+    DatePipePipe
   ],
   imports: [
     BrowserModule,
