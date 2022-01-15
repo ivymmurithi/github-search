@@ -11,6 +11,8 @@ export class UserComponent implements OnInit {
   constructor() { }
 
   @Input() user:any;
+
+
   myDate: Date = new Date();
 
   ngOnInit(): void {

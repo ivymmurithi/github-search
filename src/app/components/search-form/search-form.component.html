@@ -7,11 +7,11 @@
   </form>
 
   <div class="displays">
-   <ul *ngFor="let user of users">
+    <div *ngFor="let user of users">
      <app-user [user]='user' ></app-user>
-   </ul>
+    </div>
 
-   <ul *ngFor="let repo of repos">
+    <ul *ngFor="let repo of repos">
     <app-repositories [repo]='repo' ></app-repositories>
     </ul>
   </div>

@@ -22,7 +22,7 @@ import { UnderlineDirective } from './directives/underline.directive';
     DisplayGithubUserComponent,
     RepositoriesComponent,
     DatePipePipe,
-    UnderlineDirective
+    UnderlineDirective,
   ],
   imports: [
     BrowserModule,
