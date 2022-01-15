@@ -25,7 +25,7 @@ export class SearchFormComponent implements OnInit {
         if(searchedUser !== '') {
           this.userService.getRepos(searchedUser)
           .subscribe((response:any) => {
-            this.repos.push(response);
+            this.repos = response;
             console.log(response);
           })
         }
