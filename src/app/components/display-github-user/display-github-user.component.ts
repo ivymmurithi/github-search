@@ -8,16 +8,16 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class DisplayGithubUserComponent implements OnInit {
 
-  displayed: any[] =[];
+  // displayed: any[] =[];
 
   constructor(private userService:UserService) { }
 
   ngOnInit(): void {
-    this.userService.displayUsers()
-    .subscribe((response:any) => {
-      this.displayed = response;
-      console.log(response);
-    });
+    // this.userService.displayUsers()
+    // .subscribe((response: any) => {
+    //   this.displayed = response;
+    //   console.log(response)
+    // })
   }
 
 }

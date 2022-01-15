@@ -1,10 +1,13 @@
 <div class="container-fluid">
-    
+  <form>
     <div class="input-group input-group-lg search-bar">
       <input type="text" class="form-control" #user aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-      <button type="button" (click)="search(user.value)"class="btn btn-dark"><i class="fas fa-search"></i></button>
+      <button type="button" (click)="search(user.value); user.value=''"class="btn btn-dark"><i class="fas fa-search"></i></button>
     </div>
+  </form>
 
-    <!-- <h1>{{ user }}</h1> -->
-    <!-- <app-user [user]='user'></app-user> -->
+   <ul *ngFor="let user of users">
+     <app-user [user]='user'></app-user>
+   </ul>
+
 </div>
