@@ -6,17 +6,14 @@
     </div>
   </form>
 
+  <div class="displays">
    <ul *ngFor="let user of users">
      <app-user [user]='user' ></app-user>
    </ul>
 
    <ul *ngFor="let repo of repos">
     <app-repositories [repo]='repo' ></app-repositories>
-  </ul>
-
-
-   <!-- <ul *ngFor="let repo of repos">
-    <app-user [repo]='repo' ></app-user>
-  </ul> -->
+    </ul>
+  </div>
 
 </div>

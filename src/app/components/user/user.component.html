@@ -1,5 +1,12 @@
-<h1>{{ user.login }}</h1>
-<h1>{{ user.id }}</h1>
-<h1>{{ user.followers }}</h1>
-<img src="{{ user.avatar_url }}" alt="">
+<div class="container-fluid">
+    <div class="card" style="width: 18rem;">
+        <img src="{{ user.avatar_url }}" class="card-img-top" alt="Profile photos">
+        <div class="card-body">
+          <h5 class="card-title h1">{{ user.login }}</h5>
+          <p class="card-text h5">Followers: {{ user.followers }}</p>
+          <p class="card-text h5">Following: {{ user.following }}</p>
+          <p class="card-text h5">Public repositories: {{ user.public_repos }}</p>
+        </div>
+      </div>
+</div>
 
