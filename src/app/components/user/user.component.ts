@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DatePipePipe } from 'src/app/pipes/date-pipe.pipe';
 
 @Component({
   selector: 'app-user',
