@@ -1,7 +1,12 @@
-<div class="conatiner-fluid">
-    <ul class="list-inline text-center lists">
-        <li class="list-inline-item list">{{ repo.name }}</li>
-    </ul>
+<div class="container-fluid">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list listname">{{ repo.name }}</li>
+                <li class="list-group-item list">{{ repo.description }}</li>
+              </ul>       
+        </div>
+    </div>
 </div>  
 
 
