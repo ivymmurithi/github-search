@@ -3,9 +3,9 @@ GitHub Search
 
 ![HomePage](./src/assets/images/github1.png)
 
-![Body](./src/assets/images/github2.png)
+![Body](./src/assets/images/github11.png)
 
-![Body](./src/assets/images/github3.png)
+![Body](./src/assets/images/github22.png)
 
 
 ## Descriptiom
