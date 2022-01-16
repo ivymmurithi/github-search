@@ -5,8 +5,8 @@ import { Directive, ElementRef } from '@angular/core';
 })
 export class UnderlineDirective {
 
-  constructor(private elem:ElementRef) {
-    this.elem.nativeElement.style.textDecoration='underline';
-   }
+constructor(private elem:ElementRef) {
+	this.elem.nativeElement.style.textDecoration='underline';
+	}
 
 }
